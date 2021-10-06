@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative position</title>
+    <style>
+        .container {
+            background-color: #dada;
+
+            width: 5em;
+            height: 5em;
+
+            display: inline-block;
+        }
+
+        /* Other content will not be adjusted to fit into any gap left by the element. */
+        .first {
+            position: relative;
+            left: 2.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>A relative position example</h1>
+    <div class="container first"></div>
+    <div class="container second"></div>
+</body>
+</html>

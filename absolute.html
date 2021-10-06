@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute position</title>
+    <style>
+        .ancestor-container {
+            position: relative;
+            border: 5px solid green;
+
+            width: 10em;
+            height: 10em;
+        }
+
+        .container {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border: 5px solid green;
+
+            width: 5em;
+            height: 5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>An absolute postion example</h1>
+    <div class="ancestor-container">
+        Ancestor container has to be relative
+        <div class="container">
+            Absolute container
+        </div>
+    </div>
+</body>
+</html>
